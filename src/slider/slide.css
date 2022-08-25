@@ -1,0 +1,70 @@
+.tweetbox{
+    width: 25%;
+    height: 220px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+}
+.tweetbox-head{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+}
+.tweetbox-middle{
+    width: 90%;
+    margin: auto;
+    height: 120px;
+    border: 1px solid red;
+}
+.tweetbox-lower{
+    width: 90%;
+    margin: auto;
+    height: 30px;
+   
+   
+}
+.tweetbox-lowericons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+   
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+     height: 100%;
+     border: 1px solid green;
+}
+.image{
+    height: 100%;
+    width: 20%;
+    border: 1px solid blue;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.name{
+    height: 100%;
+    width: 60%;
+    border: 1px solid blue;
+}
+.tweet-logo{
+    height: 100%;
+    width: 25%;
+    border: 1px solid grey;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+}

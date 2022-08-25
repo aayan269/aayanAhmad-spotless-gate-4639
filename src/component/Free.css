@@ -1,0 +1,214 @@
+.freebanner{
+    width: 100%;
+    height: 350px;
+    border: 1px solid;
+    position: relative;
+    background: url(https://www.pluralsight.com/content/pluralsight/en/pricing/free-trial/jcr:content/main/generic_block/image-res.img.bc77ef0b-8dc4-4bed-9f9a-a96245769de4.jpg);
+}
+.freebanner-box{
+    position: absolute;
+    width: 70%;
+    height: 200px;
+   top: 20%;
+   left: 15%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.freebanner-box h6{
+color: #e40084 !important;
+font-weight: bold;
+}
+.freebanner-box h1{
+    color: white;
+font-size: 50px;
+font-weight: bolder;
+}
+.freebanner-box h5{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.freetextandadjuster{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(24,24,24);
+}
+.freefire{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+ 
+    display: flex;
+    justify-content: space-between;
+}
+.freetext{
+    height: 60%;
+    width: 50%;
+ 
+    position: relative;
+    top: 30%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.freetext h6{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.freetext h5{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.freeadjuster{
+    width: 30%;
+    height: 50%;
+    position: relative;
+    top: 35%;
+    right: 100px;
+   
+}
+.father-of-4-box{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(24,24,24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.trialdays-text{
+    height: 50px;
+    width: 35%;
+   
+}
+
+.free4boxes{
+    height: 350px;
+    width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.free4boxes-1{
+    height: 300px;
+    width: 25%;
+  
+    display: flex;
+    flex-direction: column;
+    
+}
+.free4boxes-1 h5{
+    position: relative;
+    top: 5%;
+    color: white;
+    font-size: 17px;
+    text-align: start;
+}
+.free4boxes-1 h6{
+    color: #e40084 !important;
+    font-size: 17px;
+    text-align: start;
+    position: relative;
+    top: 10%;
+}
+.free4boxes-12{
+    width: 100%;
+    height: 70px;
+  
+    display: flex;
+    justify-content: space-around;
+}
+.free4boxes-12 img{
+    height: 35px;
+    width: 35px;
+    
+}
+.free4boxes-12 h3{
+    position: relative;
+    top: 15%;
+    right: 14%;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+.father-of-2-box{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(24,24,24);
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.switch-button{
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    height: auto;
+    position: relative;
+    left: 45%;
+    top: 10%;
+}
+.switch-button h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+.free2boxes{
+    width: 80%;
+    height: 400px;
+    border: 1px solid blue;
+    margin: auto;
+    display: flex;
+}
+.free2boxes-1{
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.free2boxes-11{
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+}
+.free2boxes-12{
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.free2boxes-12-text{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+.free2boxes-12-yellowtag{
+    border: 1px solid yellow;
+    width: 50%;
+    height: 100%;
+}
+.free2boxes-13{
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+}
+.free2boxes-14{
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+}
+.free2boxes-1-button{
+    width: 70%;
+    height: 60px;
+    margin: auto;
+}
+.free2boxes-2{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
