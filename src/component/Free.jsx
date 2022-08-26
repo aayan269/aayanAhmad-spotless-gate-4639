@@ -1,7 +1,35 @@
-import { Button, Switch } from '@chakra-ui/react';
+import { Button, Switch, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react';
+import Slider from '../slider/slider';
 import './Free.css';
 import SliderMarks from './Freeslide';
-
+import {MdOutlineCheck} from "react-icons/md"
+let first=<MdOutlineCheck style={{color:"#fff",fontSize:"30px",left:"80%",position:'relative',color:"rgb(196,154,20)"}}/>
+let third=<MdOutlineCheck style={{color:"#fff",fontSize:"30px",left:"90%",position:'relative',color:"rgb(236,0,140)"}}/>
+let fourth=<MdOutlineCheck style={{color:"#fff",fontSize:"30px",left:"80%",position:'relative',color:"rgb(236,0,140)"}}/>
+let tdata=[
+  {name:"Paths",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Channels",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Discussion",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Exercise files",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Mobile and TV apps",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Offline viewing",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Conference",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Guides",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Badges",frst:{first},scnd:{first},thrd:{third},frth:{fourth}}
+]
+let tdata2=[
+  {name:"Skill IQ",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Role IQ",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+  {name:"Couse learning checks",frst:{first},scnd:{first},thrd:{third},frth:{fourth}},
+]
+let tdata3=[
+  {name:"API Access",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+  {name:"Trend Analytics",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+  {name:"Skill Analytics",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+  {name:"Usage Analytics",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+  {name:"Role Analytics",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+  {name:"Channel Analytics",frst:"",scnd:"",thrd:{third},frth:{fourth}},
+]
 export default function Free(){
     return(
         <div>
@@ -39,19 +67,112 @@ export default function Free(){
             <div className='free2boxes'>
                 <div className='free2boxes-1'>
                     <div className='free2boxes-11'></div>
-                    <div className='free2boxes-12'><div className='free2boxes-12-text'></div><div className='free2boxes-12-yellowtag'><h3></h3></div></div>
-                    <div className='free2boxes-13'></div>
-                    <div><Button className='free2boxes-1-button'>START A FREE 10 DAY TRIAL</Button></div>
-                    <div className='free2boxes-14'></div>
+                    <div className='free2boxes-12'><div className='free2boxes-12-text'><h3>Standard</h3></div><div className='free2boxes-12-yellowtag'><h3>SAVE 33% - LIMITED TIME</h3></div></div>
+                    <div className='free2boxes-13'><h3>Our core library of most popular courses,paths and all skill assessments</h3></div>
+                    <Button position='relative' bottom='7%' left='20%' background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'} height='60px' width='350px'>START A FREE 10-DAY TRIAL</Button>
+                    <div className='free2boxes-14'><h3>10-day free trial <br/> then ₹ 682.10/month, billed annually (₹ 8185.48)</h3></div>
                     </div>
-                <div className='free2boxes-2'></div>
+                <div className='free2boxes-1'>
+                <div className='free2boxes-21'><h3>BEST OPPERTUNITY</h3></div>
+                    <div className='free2boxes-22'><div className='free2boxes-22-text'><h3>Premium</h3></div><div className='free2boxes-22-yellowtag'><h3>SAVE 33% - LIMITED TIME</h3></div></div>
+                    <div className='free2boxes-23'><h3>Our expanded library containing all 7,000+ courses, certification practice exams</h3></div>
+                    <Button position='relative' bottom='7%' left='20%' background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'} height='60px' width='350px'>START A FREE 10-DAY TRIAL</Button>
+                    <div className='free2boxes-24'><h3>10-day free trial <br/> then ₹ 682.10/month, billed annually (₹ 8185.48)</h3></div>
+                    
+                </div>
             </div>
         </div>
 
 
+<div className='freetable'>
+<TableContainer className='tbl'>
+  <Table variant='striped' colorScheme=''>
+    <TableCaption color='white'>Imperial to metric conversion factors</TableCaption>
+    <Thead>
+      <Tr>
+        <Th color='rgb(21,73,128)' fontWeight='bolder'  fontSize='20px' >Core</Th>
+        <Th className='team1' color='white' fontSize='16px' isNumeric>standard</Th>
+        <Th className='team2' color='white' fontSize='16px'  isNumeric>premium</Th>
+         <Th className='team3' color='white' fontSize='16px' isNumeric>professional</Th>
+          <Th className='team4' color='white' fontSize='16px' isNumeric>enterprise</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+        <Td fontSize="20px">Free Trial</Td>
+        <Td fontSize="18px" className='team1' isNumeric>For 10 days</Td>
+        <Td fontSize="18px" className='team2' isNumeric>For 10 days</Td>
+        <Td fontSize="18px" className='team3'  isNumeric>For 14 days</Td>
+        <Td fontSize="18px" className='team4' isNumeric>For 14 days</Td>
+      </Tr>
+      <Tr>
+        <Td fontSize="20px">Course library</Td>
+        <Td  fontSize="18px" className='team1' isNumeric>Core library</Td>
+        <Td fontSize="18px" className='team2' isNumeric>Expanded library</Td>
+        <Td fontSize="18px" className='team3'  isNumeric>Expanded library</Td>
+        <Td fontSize="18px" className='team4' isNumeric>Expanded library</Td>
+      </Tr>
+      {tdata.map((el)=>(
+      <Tr key={el.name}>
+      <Td fontSize="20px">{el.name}</Td>
+      <Td className='team1' isNumeric>{el.frst.first}</Td>
+      <Td className='team2' isNumeric>{el.scnd.first}</Td>
+      <Td  isNumeric>{el.thrd.third}</Td>
+      <Td className='team4' isNumeric>{el.frth.fourth}</Td>
+    </Tr>
+      ))}
+    </Tbody>
+    <br/><br/><br/>
+    <h2 style={{color:'rgb(21,73,128)', fontWeight:'bolder',  fontSize:'20px',position:"relative",left:"-20%"}}>ASSESSMENTS</h2>
+    <Thead>
+      <Tr>
+        <Th  ></Th>
+        <Th  isNumeric></Th>
+        <Th   isNumeric></Th>
+         <Th  isNumeric></Th>
+          <Th  isNumeric></Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    {tdata2.map((el)=>(
+      <Tr key={el.name}>
+      <Td fontSize="20px">{el.name}</Td>
+      <Td className='team1' isNumeric>{el.frst.first}</Td>
+      <Td className='team2' isNumeric>{el.scnd.first}</Td>
+      <Td  isNumeric>{el.thrd.third}</Td>
+      <Td className='team4' isNumeric>{el.frth.fourth}</Td>
+    </Tr>
+      ))}
+    </Tbody>
 
+    <br/><br/><br/>
+    <h2 style={{color:'rgb(21,73,128)', fontWeight:'bolder',  fontSize:'20px',position:"relative",left:"-20%"}}>ANALYTICS</h2>
+    <Thead>
+      <Tr>
+        <Th  ></Th>
+        <Th  isNumeric></Th>
+        <Th   isNumeric></Th>
+         <Th  isNumeric></Th>
+          <Th  isNumeric></Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    {tdata3.map((el)=>(
+      <Tr key={el.name}>
+      <Td fontSize="20px">{el.name}</Td>
+      <Td className='team1' isNumeric>{el.frst.first}</Td>
+      <Td className='team2' isNumeric>{el.scnd.first}</Td>
+      <Td  isNumeric>{el.thrd.third}</Td>
+      <Td className='team4' isNumeric>{el.frth.fourth}</Td>
+    </Tr>
+      ))}
+    </Tbody>
+  </Table>
+</TableContainer>
 
-
+</div>
+<div className='slid'>
+        <Slider /></div>
 
 
         </div>

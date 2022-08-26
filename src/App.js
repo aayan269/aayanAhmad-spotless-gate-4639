@@ -12,7 +12,9 @@ function App() {
       <Navbar/>
      <AllRoutes/>
       <Footer/>
-      <Free/>
+     
+     
+     
     </div>
   );
 }
