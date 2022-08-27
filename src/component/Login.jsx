@@ -5,13 +5,18 @@ import logo2 from './login-h1 (1).png'
 import { useContext } from 'react';
 import { AuthContext } from '../context/AppContext';
 import { useState } from 'react';
-import {Navigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 const initForm={email:"",password:""}
 
 export default function Login(){
+    const Navigate=useNavigate()
     const auth= useContext(AuthContext)
     const [form,setForm]=useState(initForm)
+
+    const handlePain=()=>{
+        Navigate('/free')
+    }
 console.log(auth)
     const handleChange=(e)=>{
         const {name,value}=e.target
@@ -36,7 +41,7 @@ console.log(auth)
     }
    
     if(auth.token){
-        return <Navigate to="/" />
+        return Navigate('/')
     }
     return(
         <div className='leftRight'>
@@ -75,7 +80,7 @@ console.log(auth)
             <div className="Right">
                 <div className='rightlogo'><img src={logo} alt="" />
                 <div className='rightlogo2'><img src={logo2} alt="" /></div>
-                <Button position='absolute' left='10%' top='68%' width='250px' background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'}>Try for free</Button>
+                <Button position='absolute' left='10%' top='68%' width='250px' onClick={handlePain} background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'}>Try for free</Button>
                 </div>
             </div>
             

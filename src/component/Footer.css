@@ -122,6 +122,7 @@ flex-direction: column;
 }
 p:hover{
     color:white;
+    cursor: pointer;
 }
 .footer2{
     width: 100%;
@@ -174,6 +175,7 @@ background-color: rgb(34,34,34) ;
         width: 20%;
         height: 100%;
         background-color: rgb(34,34,34) ;
+        cursor: pointer;
         
         display: flex;
         justify-content: space-evenly;

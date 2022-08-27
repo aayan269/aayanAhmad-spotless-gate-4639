@@ -3,11 +3,16 @@ import play from "./ps-icon.png"
 import { FaFacebookF,FaTwitter,FaLinkedinIn,FaYoutube } from "react-icons/fa";
 import {BsInstagram} from "react-icons/bs"
 import { Button } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 export default function Footer(){
+    const Navigate=useNavigate()
+    const handleFer=()=>{
+        Navigate('/free')
+    }
     return(<div>
         <div className='prefooter'>
             <h1>Insights that give you an edge</h1>
-            <Button position='relative' top='40%' background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'} height='50px' width='220px'>TRY FOR FREE</Button>
+            <Button position='relative' onClick={handleFer} top='40%' background={'rgb(131,58,180) linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)'} height='50px' width='220px'>TRY FOR FREE</Button>
         </div>
         <div className="container">
             <div className='footer'>
